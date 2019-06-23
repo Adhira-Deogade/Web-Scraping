@@ -5,7 +5,7 @@ Web scraping with beautiful soup content:
 02. Navigable string objects
 
 
-### Use cases of web scraping:
+## Use cases of web scraping:
 1. e-commerce store automation
 2. Emergency resources allocation
 
@@ -27,17 +27,17 @@ When I print the object, I find it difficult to read as it has no structure. The
 ## 2. Tag objects:
 Conists of *name* and *attributes*. Attributes are to reference, search, and navigate data by tagging BeautifulSoup
 #### Working with names:
-  1. Obtain tag from HTML *body*
-  2. Give it a name, change its name
+  - Obtain tag from HTML *body*
+  - Give it a name, change its name
 #### Working with attributes:
-  1. Treating as dictionary
-  2. Append and delete elements in dictionary format
+  - Treating as dictionary
+  - Append and delete elements in dictionary format
 #### Navigating tree with tags:
-  1. ```soup.title```
-  2. ```soup.head```
-  3. ```soup.body.b```
-  4. Get unordered list ```soup.ul```
-  5. Web link ```soup.a```
+  - ```soup.title```
+  - ```soup.head```
+  - ```soup.body.b```
+  - Get unordered list ```soup.ul```
+  - Web link ```soup.a```
  
 ## 2. Navigable string objects
 ## 3. 

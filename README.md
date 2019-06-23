@@ -27,17 +27,17 @@ When I print the object, I find it difficult to read as it has no structure. The
 ## 2. Tag objects:
 Conists of *name* and *attributes*. Attributes are to reference, search, and navigate data by tagging BeautifulSoup
 #### Working with names:
-      a. Obtain tag from HTML *body*
-      b. Give it a name, change its name
+a. Obtain tag from HTML *body*
+b. Give it a name, change its name
 #### Working with attributes:
-      a. Treating as dictionary
-      b. Append and delete elements in dictionary format
+a. Treating as dictionary
+b. Append and delete elements in dictionary format
 #### Navigating tree with tags:
-      a. ```soup.title```
-      b. ```soup.head```
-      c. ```soup.body.b```
-      d. Get unordered list ```soup.ul```
-      e. Web link ```soup.a```
+a. ```soup.title```
+b. ```soup.head```
+c. ```soup.body.b```
+d. Get unordered list ```soup.ul```
+e. Web link ```soup.a```
  
 ## 2. Navigable string objects
 ## 3. 

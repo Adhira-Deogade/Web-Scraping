@@ -68,7 +68,7 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   > li
   > li
   - Retrieving weblinks by filetring with Regular String object
-  ``` or link in soup.find_all('a'): print(link.get('href'))```
+  - ``` for link in soup.find_all('a'): print(link.get('href'))```
   > http://www.data-mania.com/blog/books-by-lillian-pierson/
   > http://www.data-mania.com/blog/data-science-for-dummies-answers-what-is-data-science/
   > http://bit.ly/Data-Science-For-Dummies

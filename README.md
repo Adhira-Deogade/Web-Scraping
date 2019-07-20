@@ -48,20 +48,19 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
 ## 3. Retrieving tags: [Book 4](https://github.com/Adhira-Deogade/Web-Scraping/blob/master/Working%20with%20parsed%20data.ipynb)
   1. Filtering with name argument
      - ```soup.find_all("li")```
-     
-  > <li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and preparing your data for analysis</li>
+     - ```<li>Provides a background in data science fundamentals ... data for analysis</li>```
   
   2. Filtering with keyword argument
      - ```soup.find_all(id = "link 3")```
-  > [<a class="preview" href="http://bit.ly/Data-Science-For-Dummies" id="link 3">buy the book!</a>]
+     - ```[<a class="preview" href="http://bit.ly/Data-Science-For-Dummies" id="link 3">buy the book!</a>]```
   
   3. Filetring with String argument
      - ```soup.find_all('ul')```
-  > [<ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and preparing your data for analysis</li>
+     - ```[<ul>\n<li>Provides a background in data science fundamentals ... data for analysis</li> ... <ul>```
   
   4. Filetring with List object
      - ```soup.find_all(['ul','b'])```
- [<b>DATA SCIENCE FOR DUMMIES</b>,<ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and preparing your data for analysis</li>\n</ul>]
+     - ``` [<b>DATA SCIENCE FOR DUMMIES</b>,<ul>\n<li>Provides a background in data science ... data for analysis</li>\n</ul>]
   
   5. Filtering with regular expression argument (re match method)
      - ```l = re.compile('l')```

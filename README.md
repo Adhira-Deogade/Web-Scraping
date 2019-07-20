@@ -60,14 +60,17 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   
   4. Filetring with List object
      - ```soup.find_all(['ul','b'])```
-     - ``` [<b>DATA SCIENCE FOR DUMMIES</b>,<ul>\n<li>Provides a background in data science ... data for analysis</li>\n</ul>]
+     - ```<b>DATA SCIENCE FOR DUMMIES</b>,<ul>\n<li>Provides a background in data science ... data for analysis</li>\n</ul>
   
   5. Filtering with regular expression argument (re match method)
      - ```l = re.compile('l')```
      - ``` for tag in soup.find_all(l): print (tag.name)```
       > html
+      
       > title
+      
       > ul
+      
       > li
  
   6. Retrieving weblinks by filetring with Regular String object

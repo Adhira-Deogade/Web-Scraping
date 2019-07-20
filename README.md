@@ -1,9 +1,8 @@
 # Web-Scraping
-Web scraping with beautiful soup content:
 
-01. Web scraping with beautiful soup
+01. Getting started with Web scraping
 02. Navigable string objects
-
+03. Parsing tags in html tree
 
 ## Use cases of web scraping:
 1. e-commerce store automation
@@ -15,7 +14,7 @@ There are 4 main types of object types in BeautifulSoup:
 3. Navigable string object
 4. Comment object
 
-## 1. Web scraping with beautiful soup: [Book 1](web scraping with beautiful soup.ipynb)
+## 1. Web scraping with beautiful soup: [Book 1](https://github.com/Adhira-Deogade/Web-Scraping/blob/master/web%20scraping%20with%20beautiful%20soup.ipynb)
   1. Install BeautifulSoup python package from command line ```pip install BeautifulSoup```
   2. Import library
   3. Create an HTML document

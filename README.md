@@ -74,5 +74,5 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   > http://bit.ly/Data-Science-For-Dummies
   
   - Retrieving Strings by filetring with Regular expression
-  ``` soup.find_all(string = re.compile("data"))```
+  .. * ``` soup.find_all(string = re.compile("data"))```
   > [u'Jobs in data science abound, but few people have the data science skills needed to fill these increasingly important roles in ...

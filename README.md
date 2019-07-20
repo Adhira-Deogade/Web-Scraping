@@ -50,38 +50,41 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   1. Filtering with name argument
      - ```soup.find_all("li")```
      
-  > <li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and   > preparing your data for analysis</li>
+  > <li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and preparing your data for analysis</li>
   
   2. Filtering with keyword argument
-    - ```soup.find_all(id = "link 3")```
+     - ```soup.find_all(id = "link 3")```
   > [<a class="preview" href="http://bit.ly/Data-Science-For-Dummies" id="link 3">buy the book!</a>]
   
   3. Filetring with String argument
-    - ```soup.find_all('ul')```
-  > [<ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured
-  > data and preparing your data for analysis</li>
+     - ```soup.find_all('ul')```
+  > [<ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and preparing your data for analysis</li>
   
   4. Filetring with List object
-    - ```soup.find_all(['ul','b'])```
-  > [<b>DATA SCIENCE FOR DUMMIES</b>,
-  > <ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured     > data and preparing your data for analysis</li>\n<li>Details different data visualization techniques that can be used to showcase and     > summarize your data</li>\n<li>Explains both supervised and unsupervised machine learning, including regression, model validation, and   > clustering techniques</li>\n<li>Includes coverage of big data processing tools like MapReduce, Hadoop, Storm, and Spark</li>\n</ul>]
+     - ```soup.find_all(['ul','b'])```
+  > [<b>DATA SCIENCE FOR DUMMIES</b>,<ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and preparing your data for analysis</li>\n</ul>]
   
   5. Filtering with regular expression argument (re match method)
-    - ```l = re.compile('l')```
-    - ``` for tag in soup.find_all(l): print (tag.name)```
+     - ```l = re.compile('l')```
+     - ``` for tag in soup.find_all(l): print (tag.name)```
   > html
+  
   > title
+  
   > ul
+  
   > li
+  
   > li
-  > li
-  > li
+ 
   6. Retrieving weblinks by filetring with Regular String object
-    - ``` for link in soup.find_all('a'): print(link.get('href'))```
+     - ``` for link in soup.find_all('a'): print(link.get('href'))```
   > http://www.data-mania.com/blog/books-by-lillian-pierson/
+  
   > http://www.data-mania.com/blog/data-science-for-dummies-answers-what-is-data-science/
+  
   > http://bit.ly/Data-Science-For-Dummies
   
   7. Retrieving Strings by filetring with Regular expression
-    - ``` soup.find_all(string = re.compile("data"))```
-  > [u'Jobs in data science abound, but few people have the data science skills needed to fill these increasingly important roles in ...
+     - ``` soup.find_all(string = re.compile("data"))```
+  > [u'Jobs in data science abound, ...les in ...]

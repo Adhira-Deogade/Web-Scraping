@@ -23,7 +23,7 @@ The output of constructor gives a BeautifulSoup object which is a transforation 
 
 When I print the object, I find it difficult to read as it has no structure. Therefore, I use ```soup.prettify``` method to make the document structured and readable.
 
-## 2. Tag objects: [Book 2](Web scraping action.ipynb)
+## 2. Tag objects: [Book 2](https://github.com/Adhira-Deogade/Web-Scraping/blob/master/Web%20scraping%20action.ipynb)
 Conists of *name* and *attributes*. Attributes are to reference, search, and navigate data by tagging BeautifulSoup
 #### Working with names:
   - Obtain tag from HTML *body*
@@ -38,14 +38,14 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   - Get unordered list ```soup.ul```
   - Web link ```soup.a```
  
-## 2. Navigable string objects: [Book 3](Navigable string objects.ipynb)
+## 2. Navigable string objects: [Book 3](https://github.com/Adhira-Deogade/Web-Scraping/blob/master/Navigable%20string%20objects.ipynb)
   - Obtain the string inside the tag
   - ``` tag = soup.b```
   - ``` nav_string = tag.string```
   - Obtain all stirngs in object ```for string in soup.stripped_strings:print(repr(string))```
   - Obtain parent tag within parsed tree ```nav_string.parent```
   
-## 3. Retrieving tags: [Book 4](Working with parsed data.ipynb)
+## 3. Retrieving tags: [Book 4](https://github.com/Adhira-Deogade/Web-Scraping/blob/master/Working%20with%20parsed%20data.ipynb)
   1. Filtering with name argument
      - ```soup.find_all("li")```
      
@@ -71,8 +71,6 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   > title
   
   > ul
-  
-  > li
   
   > li
  

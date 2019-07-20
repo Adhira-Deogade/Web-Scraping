@@ -61,7 +61,7 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   
   4. Filetring with List object
      - ```soup.find_all(['ul','b'])```
-  > [<b>DATA SCIENCE FOR DUMMIES</b>,<ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and preparing your data for analysis</li>\n</ul>]
+ [<b>DATA SCIENCE FOR DUMMIES</b>,<ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and preparing your data for analysis</li>\n</ul>]
   
   5. Filtering with regular expression argument (re match method)
      - ```l = re.compile('l')```

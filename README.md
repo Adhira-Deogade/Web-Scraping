@@ -24,7 +24,7 @@ The output of constructor gives a BeautifulSoup object which is a transforation 
 
 When I print the object, I find it difficult to read as it has no structure. Therefore, I use ```soup.prettify``` method to make the document structured and readable.
 
-## 2. Tag objects:[Book 2]()
+## 2. Tag objects: [Book 2]()
 Conists of *name* and *attributes*. Attributes are to reference, search, and navigate data by tagging BeautifulSoup
 #### Working with names:
   - Obtain tag from HTML *body*
@@ -39,17 +39,40 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   - Get unordered list ```soup.ul```
   - Web link ```soup.a```
  
-## 2. Navigable string objects [Book 3]()
+## 2. Navigable string objects: [Book 3]()
   - Obtain the string inside the tag
   - ``` tag = soup.b```
   - ``` nav_string = tag.string```
   - Obtain all stirngs in object ```for string in soup.stripped_strings:print(repr(string))```
   - Obtain parent tag within parsed tree ```nav_string.parent```
-## 3. Retrieving tags[Book 4]()
+## 3. Retrieving tags: [Book 4]()
   - Filtering with name argument ```soup.find_all("li")```
-  > <li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and > preparing your data for analysis</li>,
- > <li>Details different data visualization techniques that can be used to showcase and summarize your data</li>,
- > <li>Explains both supervised and unsupervised machine learning, including regression, model validation, and clustering techniques</li>,
- > <li>Includes coverage of big data processing tools like MapReduce, Hadoop, Storm, and Spark</li>
+  > <li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and   > preparing your data for analysis</li>
   - Filtering with keyword argument  ```soup.find_all(id = "link 3")```
-  - 
+  > [<a class="preview" href="http://bit.ly/Data-Science-For-Dummies" id="link 3">buy the book!</a>]
+  - Filetring with String argument ```soup.find_all('ul')```
+  > [<ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured
+  > data and preparing your data for analysis</li>
+  
+  - Filetring with List object ```soup.find_all(['ul','b'])```
+  > [<b>DATA SCIENCE FOR DUMMIES</b>,
+  > <ul>\n<li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured     > data and preparing your data for analysis</li>\n<li>Details different data visualization techniques that can be used to showcase and     > summarize your data</li>\n<li>Explains both supervised and unsupervised machine learning, including regression, model validation, and   > clustering techniques</li>\n<li>Includes coverage of big data processing tools like MapReduce, Hadoop, Storm, and Spark</li>\n</ul>]
+  
+  - Filtering with regular expression argument (re match method) ```l = re.compile('l')```
+  ``` for tag in soup.find_all(l): print (tag.name)```
+  > html
+  > title
+  > ul
+  > li
+  > li
+  > li
+  > li
+  - Retrieving weblinks by filetring with Regular String object
+  ``` or link in soup.find_all('a'): print(link.get('href'))```
+  > http://www.data-mania.com/blog/books-by-lillian-pierson/
+  > http://www.data-mania.com/blog/data-science-for-dummies-answers-what-is-data-science/
+  > http://bit.ly/Data-Science-For-Dummies
+  
+  - Retrieving Strings by filetring with Regular expression
+  ``` soup.find_all(string = re.compile("data"))```
+  > [u'Jobs in data science abound, but few people have the data science skills needed to fill these increasingly important roles in ...

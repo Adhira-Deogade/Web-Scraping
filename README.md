@@ -45,9 +45,11 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   - ``` nav_string = tag.string```
   - Obtain all stirngs in object ```for string in soup.stripped_strings:print(repr(string))```
   - Obtain parent tag within parsed tree ```nav_string.parent```
+  
 ## 3. Retrieving tags: [Book 4](Working with parsed data.ipynb)
   1. Filtering with name argument
-    - ```soup.find_all("li")```
+     - ```soup.find_all("li")```
+     
   > <li>Provides a background in data science fundamentals before moving on to working with relational databases and unstructured data and   > preparing your data for analysis</li>
   
   2. Filtering with keyword argument

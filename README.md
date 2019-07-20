@@ -65,22 +65,19 @@ Conists of *name* and *attributes*. Attributes are to reference, search, and nav
   5. Filtering with regular expression argument (re match method)
      - ```l = re.compile('l')```
      - ``` for tag in soup.find_all(l): print (tag.name)```
-  > html
-  
-  > title
-  
-  > ul
-  
-  > li
+      > html
+      > title
+      > ul
+      > li
  
   6. Retrieving weblinks by filetring with Regular String object
      - ``` for link in soup.find_all('a'): print(link.get('href'))```
-  > http://www.data-mania.com/blog/books-by-lillian-pierson/
+      > http://www.data-mania.com/blog/books-by-lillian-pierson/
   
-  > http://www.data-mania.com/blog/data-science-for-dummies-answers-what-is-data-science/
+      > http://www.data-mania.com/blog/data-science-for-dummies-answers-what-is-data-science/
   
-  > http://bit.ly/Data-Science-For-Dummies
+      > http://bit.ly/Data-Science-For-Dummies
   
   7. Retrieving Strings by filetring with Regular expression
      - ``` soup.find_all(string = re.compile("data"))```
-  > [u'Jobs in data science abound, ...les in ...]
+      > [u'Jobs in data science abound, ...les in ...]

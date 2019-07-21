@@ -19,7 +19,7 @@ There are 4 main types of object types in BeautifulSoup:
   2. Import library
   3. Create an HTML document
   4. Create constructor with HTML parser ```BeautifulSoup(html_doc, 'html.parser')```
-The output of constructor gives a BeautifulSoup object which is a transforation of markup into *parse tree*. The *parse tree* is a set of linked objects representing structure of document.
+The output of constructor gives a BeautifulSoup object which is a transformation of markup into *parse tree*. The *parse tree* is a set of linked objects representing structure of document.
 
 When I print the object, I find it difficult to read as it has no structure. Therefore, I use ```soup.prettify``` method to make the document structured and readable.
 
